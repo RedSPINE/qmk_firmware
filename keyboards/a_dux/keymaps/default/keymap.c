@@ -1,5 +1,6 @@
 // Copyright 2022 @filterpaper
-// SPDX-License-Identifier: GPL-2.0+
+// SPDX-License-Identifier: GPL-2.0;
+// Spine keymap for RedSPINE, made for BÉPO layout
 
 #include QMK_KEYBOARD_H
 //#define TD_0 ACTION_TAP_DANCE_LAYER_TOGGLE(, 4) 
@@ -8,16 +9,16 @@
 // https://stevep99.github.io/seniply
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    [0] = LAYOUT_split_3x5_2(// BÉPO Typing
+    [0] = LAYOUT_split_3x5_2(// BÉPO typing
     KC_Q,       KC_W,       KC_E,       KC_R,       KC_T,                   KC_Y,       KC_U,       KC_I,       KC_O,       KC_QUOT,
     KC_A,       KC_S,       KC_D,       KC_F,       KC_G,                   KC_H,       KC_J,       KC_K,       KC_L,       KC_SCLN,
     KC_Z,       KC_C,       KC_X,       KC_V,       KC_B,                   KC_RBRC,    KC_M,       KC_COMM,    KC_DOT,     KC_SLSH,
                                         MO(2),      KC_LSFT,                LT(5,KC_SPC),  LT(1,KC_ENT)
     ),
     [1] = LAYOUT_split_3x5_2(// Everything code related and numbers
-    KC_PIPE,    KC_LT,      KC_PEQL,    KC_GT,      KC_AT,                  KC_PSLS,    KC_P7,      KC_P8,      KC_P9,      KC_PPLS,
-    ALGR(KC_Z), KC_LPRN,    KC_RPRN,    KC_DQT,     ALGR(KC_G),             KC_PAST,    KC_P4,      KC_P5,      KC_P6,      KC_PMNS,
-    KC_HASH,    ALGR(KC_X), ALGR(KC_C), KC_DOLLAR,  KC_TILD,                KC_P0,      KC_P1,      KC_P2,      KC_P3,      KC_PDOT,
+    ALGR(KC_A), ALGR(KC_2), KC_MINS,    ALGR(KC_3), KC_6,                   KC_PSLS,    KC_P7,      KC_P8,      KC_P9,      KC_PPLS,
+    ALGR(KC_Z), KC_4,       KC_5,       KC_1,       ALGR(KC_G),             KC_PAST,    KC_P4,      KC_P5,      KC_P6,      KC_PMNS,
+    S(KC_GRV),  ALGR(KC_X), ALGR(KC_C), KC_GRV,     ALGR(KC_B),             KC_P0,      KC_P1,      KC_P2,      KC_P3,      KC_PDOT,
                                         MO(3),      KC_LALT,                ___,        KC_TRNS
     ),
     [2] = LAYOUT_split_3x5_2(// Shortcutes Left Hand Only                   Arrow keys emulation, and BSPC
