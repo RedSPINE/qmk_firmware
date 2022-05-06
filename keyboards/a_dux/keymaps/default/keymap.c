@@ -3,6 +3,7 @@
 // Spine keymap for RedSPINE, made for BÉPO layout
 
 #include QMK_KEYBOARD_H
+#define GAME1 7
 //#define TD_0 ACTION_TAP_DANCE_LAYER_TOGGLE(, 4) 
 
 // Seniply layout
@@ -29,7 +30,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [3] = LAYOUT_split_3x5_2(//                                             Mouse emulation
     TG(3),      KC_WH_D,    KC_MS_U,    KC_WH_U,    KC_ACL2,                TG(3),      KC_WH_U,    KC_MS_U,    KC_WH_D,    KC_ACL2,
-    ___,        KC_MS_L,    KC_MS_D,    KC_MS_R,    KC_ACL1,                ___,        KC_MS_L,    KC_MS_D,    KC_MS_R,    KC_ACL1,
+    ___,        KC_MS_L,    KC_MS_D,    KC_MS_R,    KC_ACL1,                TG(GAME1),  KC_MS_L,    KC_MS_D,    KC_MS_R,    KC_ACL1,
     KC_LCTL,    KC_BTN3,    KC_BTN2,    KC_BTN1,    KC_ACL0,                ___,        KC_BTN1,    KC_BTN2,    KC_BTN3,    KC_ACL0,
                                         KC_TRNS,    KC_LSFT,                ___,        KC_TRNS
     ),
@@ -51,4 +52,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ___,        ___,        ___,        G(KC_X),    G(KC_V),                ___,        ___,        ___,        ___,        ___,
                                         KC_TRNS,    TG(3),                  ___,        _______
     ),
+    // ========================================================= GAMING =========================================================
+    [GAME1] = LAYOUT_split_3x5_2(// League of Legends / Gaming Layout #1
+    KC_ESC,     KC_1,       KC_2,       KC_3,       KC_4,                   ___,        ___,        ___,        ___,        ___,
+    KC_LSFT,    KC_Q,       KC_W,       KC_E,       KC_R,                   TG(GAME1),  ___,        ___,        ___,        ___,
+    KC_TAB,     KC_A,       KC_S,       KC_D,       KC_F,                   ___,        ___,        ___,        ___,        ___,
+                                        KC_SPC,    KC_LCTL,                 ___,        ___
+    )
 };
