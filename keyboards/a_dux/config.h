@@ -57,7 +57,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 #define UNUSED_PINS
-#define TAPPING_TERM 100
+#define TAPPING_TERM 125
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 5

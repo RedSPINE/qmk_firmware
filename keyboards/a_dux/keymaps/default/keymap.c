@@ -19,7 +19,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ALGR(KC_A), ALGR(KC_2), KC_MINS,    ALGR(KC_3), KC_6,                   KC_PSLS,    KC_P7,      KC_P8,      KC_P9,      KC_PPLS,
     ALGR(KC_Z), KC_4,       KC_5,       KC_1,       ALGR(KC_G),             KC_PAST,    KC_P4,      KC_P5,      KC_P6,      KC_PMNS,
     S(KC_GRV),  ALGR(KC_X), ALGR(KC_C), KC_GRV,     ALGR(KC_B),             KC_P0,      KC_P1,      KC_P2,      KC_P3,      KC_PDOT,
-                                        MO(3),      KC_LALT,                ___,        KC_TRNS
+                                        MO(3),      KC_RALT,                ___,        KC_TRNS
     ),
     [2] = LAYOUT_split_3x5_2(// Shortcutes Left Hand Only                   Arrow keys emulation, and BSPC
     KC_ESC,     C(KC_D),    KC_DEL,     KC_BSPC,    A(KC_F4),               KC_PGUP,    KC_HOME,    KC_UP,      KC_END,     KC_F2,
@@ -28,10 +28,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                         KC_TRNS,    TG(4),                  KC_RCTL,    MO(3)
     ),
     [3] = LAYOUT_split_3x5_2(//                                             Mouse emulation
-    ___,        ___,        ___,        ___,        ___,                    ___,        KC_WH_U,    KC_MS_U,    KC_WH_D,    KC_ACL2,
-    ___,        ___,        ___,        ___,        ___,                    ___,        KC_MS_L,    KC_MS_D,    KC_MS_R,    KC_ACL1,
-    ___,        ___,        ___,        ___,        ___,                    ___,        KC_BTN1,    KC_BTN2,    KC_BTN3,    KC_ACL0,
-                                        KC_TRNS,    ___,                    ___,        KC_TRNS
+    TG(3),      KC_WH_D,    KC_MS_U,    KC_WH_U,    KC_ACL2,                TG(3),      KC_WH_U,    KC_MS_U,    KC_WH_D,    KC_ACL2,
+    ___,        KC_MS_L,    KC_MS_D,    KC_MS_R,    KC_ACL1,                ___,        KC_MS_L,    KC_MS_D,    KC_MS_R,    KC_ACL1,
+    KC_LCTL,    KC_BTN3,    KC_BTN2,    KC_BTN1,    KC_ACL0,                ___,        KC_BTN1,    KC_BTN2,    KC_BTN3,    KC_ACL0,
+                                        KC_TRNS,    KC_LSFT,                ___,        KC_TRNS
     ),
     [4] = LAYOUT_split_3x5_2(//
     KC_PSLS,    KC_P7,      KC_P8,      KC_P9,      KC_PPLS,                KC_F12,     KC_F7,      KC_F8,      KC_F9,      ___,
@@ -43,12 +43,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ___,        ALGR(KC_W), ALGR(KC_D), ALGR(KC_E), ALGR(KC_T),             ___,        KC_VOLD,    KC_MUTE,    KC_VOLU,    ___,
     KC_BSLS,    KC_LBRC,    KC_P,       KC_N,       ALGR(KC_R),             ___,        KC_MPRV,    KC_MPLY,    KC_MNXT,    ___,
     ALGR(KC_S), KC_4,       KC_5,       ALGR(KC_V),    C(KC_F),             ___,        ___,        ___,        ___,        ___,
-                                    ALGR(KC_SPC),   KC_LSFT,                KC_TRNS,    ___
+                                        ALGR(KC_SPC),   KC_LSFT,            KC_TRNS,    ___
     ),
     [6] = LAYOUT_split_3x5_2(// Windows Shortcuts LeftHand only
     ___,        ___,        G(KC_L),    G(KC_D),    G(KC_SPC),              ___,        ___,        ___,        ___,        ___,
     ___,        KC_TRNS,    G(S(KC_S)), G(KC_E),    G(KC_R),                ___,        ___,        ___,        ___,        ___,
     ___,        ___,        ___,        G(KC_X),    G(KC_V),                ___,        ___,        ___,        ___,        ___,
-                                        KC_TRNS,    ___,                    ___,        _______
+                                        KC_TRNS,    TG(3),                  ___,        _______
     ),
 };
