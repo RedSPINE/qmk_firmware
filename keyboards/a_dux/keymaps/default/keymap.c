@@ -17,7 +17,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                         MO(2),      KC_LSFT,                LT(5,KC_SPC),  LT(1,KC_ENT)
     ),
     [1] = LAYOUT_split_3x5_2(// Everything code related and numbers
-    ALGR(KC_A), ALGR(KC_2), KC_MINS,    ALGR(KC_3), KC_6,                   KC_PSLS,    KC_P7,      KC_P8,      KC_P9,      KC_PPLS,
+    ALGR(KC_Q), ALGR(KC_2), KC_MINS,    ALGR(KC_3), KC_6,                   KC_PSLS,    KC_P7,      KC_P8,      KC_P9,      KC_PPLS,
     ALGR(KC_Z), KC_4,       KC_5,       KC_1,       ALGR(KC_G),             KC_PAST,    KC_P4,      KC_P5,      KC_P6,      KC_PMNS,
     S(KC_GRV),  ALGR(KC_X), ALGR(KC_C), KC_GRV,     ALGR(KC_B),             KC_P0,      KC_P1,      KC_P2,      KC_P3,      KC_PDOT,
                                         MO(3),      KC_RALT,                ___,        KC_TRNS
@@ -41,7 +41,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                         KC_BSPC,    KC_ENT,                 TG(4),      ___
     ),    
     [5] = LAYOUT_split_3x5_2(// More BÉPO Letters for typing                Music
-    ___,        ALGR(KC_W), ALGR(KC_D), ALGR(KC_E), ALGR(KC_T),             ___,        KC_VOLD,    KC_MUTE,    KC_VOLU,    ___,
+    ALGR(KC_A),        ALGR(KC_W), ALGR(KC_D), ALGR(KC_E), ALGR(KC_T),             ___,        KC_VOLD,    KC_MUTE,    KC_VOLU,    ___,
     KC_BSLS,    KC_LBRC,    KC_P,       KC_N,       ALGR(KC_R),             ___,        KC_MPRV,    KC_MPLY,    KC_MNXT,    ___,
     ALGR(KC_S), KC_4,       KC_5,       ALGR(KC_V),    C(KC_F),             ___,        ___,        ___,        ___,        ___,
                                         ALGR(KC_SPC),   KC_LSFT,            KC_TRNS,    ___
