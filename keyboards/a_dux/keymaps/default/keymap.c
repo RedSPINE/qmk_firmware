@@ -21,16 +21,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                         MO(2),      KC_LSFT,                LT(5,KC_SPC),  LT(1,KC_ENT)
     ),
     [1] = LAYOUT_split_3x5_2(// Everything code related and numbers
-//  |           <           =≠          >           @^                      
-//  \           ([          )]          "           '
-//  #¶          {           }           $           ~      
-//                                      L3          RAlt
+//  |           <           =≠          >           @^                      /÷          7           8           9           +±
+//  \           ([          )]          "           '                       *×          4           5           6           -−
+//  #¶          {           }           $           ~                       0           1           2           3           %‰
+//                                      L3          RAlt                    NONE        PRESSED
     ALGR(KC_Q), ALGR(KC_2), KC_MINS,    ALGR(KC_3), KC_6,                   KC_9,       KC_P7,      KC_P8,      KC_P9,      KC_7,
     ALGR(KC_Z), KC_4,       KC_5,       KC_1,       ALGR(KC_G),             KC_0,       KC_P4,      KC_P5,      KC_P6,      KC_8,
-    S(KC_GRV),  ALGR(KC_X), ALGR(KC_C), KC_GRV,     ALGR(KC_B),             KC_P0,      KC_P1,      KC_P2,      KC_P3,      KC_PDOT,
+    S(KC_GRV),  ALGR(KC_X), ALGR(KC_C), KC_GRV,     ALGR(KC_B),             KC_P0,      KC_P1,      KC_P2,      KC_P3,      KC_EQL,
                                         MO(3),      KC_RALT,                ___,        KC_TRNS
     ),
-    [2] = LAYOUT_split_3x5_2(// Shortcutes Left Hand Only                   Arrow keys emulation, and BSPC
+    [2] = LAYOUT_split_3x5_2(// Shortcutes Left Hand Only                   Navigation and Formatting
     KC_ESC,     C(KC_D),    KC_DEL,     KC_BSPC,    A(KC_F4),               KC_PGUP,    KC_HOME,    KC_UP,      KC_END,     KC_F2,
     KC_LSFT,    LT(6,KC_LGUI),KC_LALT,  KC_TAB,     C(KC_W),                KC_PGDN,    KC_LEFT,    KC_DOWN,    KC_RGHT,    KC_ENT,
     KC_LCTL,    C(KC_X),    C(KC_C),    C(KC_S),    C(KC_V),                KC_DEL,     KC_BSPC,    ___,        ___,        ___,
