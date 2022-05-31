@@ -10,8 +10,8 @@
 #define BÉP1 1 //   |   ·· ×·   |   BÉPO
 // SHORTCUTS ========================================
 #define ShCt0 2 //  |   ×· ··   |   Shortcuts for left hand + Navigation and Formatting
-#define ShCt1 3 //  |  ××· ··   |   more Shortcuts for left hand
-#define LAYERS 4 // |  ××· ··   |   Enter layers
+#define ShCt1 3 //  |  ××· ··   |   more Shortcuts for left hand + Music control
+#define LAYERS 4 // |  ××· ··   |   Enter Locked layers
 // FUNCTIONS ========================================
 #define NUM 5 //    |   ·· ·×   |   Code Related + Numbers
 #define MOUSE 6 //  |   ×· ·×   |   Mouse emulation
