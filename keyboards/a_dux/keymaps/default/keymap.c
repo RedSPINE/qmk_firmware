@@ -32,22 +32,22 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                       MO(ShCt0),    KC_LSFT,                LT(5,KC_SPC),  LT(NUM,KC_ENT)
     ),
     [BÉP1] = LAYOUT_split_3x5_2(// More BÉPO with Transparency
-//  Ææ          ♥(´)        (˙)(¨)      §&          `(`)                  
-//  Çç          Zz          Jj          ?’          Œœ
-//  Ùù                                  ·…          
+//  Ææ          ♥(´)        (˙)(¨)      §&          `(`)
+//  Çç          Ùù          Jj          ?’          Œœ
+//  Zz                                  ·…          
 //                                      Insec       Shift
     ALGR(KC_A), ALGR(KC_W), ALGR(KC_D), ALGR(KC_E), ALGR(KC_T),             KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
-    KC_BSLS,    KC_LBRC,    KC_P,       KC_N,       ALGR(KC_R),             KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
-    ALGR(KC_S), KC_TRNS,    KC_TRNS,    ALGR(KC_V), KC_TRNS,                KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
+    KC_BSLS,    ALGR(KC_S), KC_P,       KC_N,       ALGR(KC_R),             KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
+    KC_LBRC,    KC_TRNS,    KC_TRNS,    ALGR(KC_V), KC_TRNS,                KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
                                         ALGR(KC_SPC),   KC_LSFT,            KC_TRNS,    ___
     ),
     [NUM] = LAYOUT_split_3x5_2(// Everything code related and numbers
 //  |           <           =≠          >           @^                      /÷          7           8           9           +±
-//  \           ([          )]          "           '                       *×          4           5           6           -−
+//  \           ([          )]          '           "—                      *×          4           5           6           -−
 //  #¶          {           }           $           ~                       0           1           2           3           %‰
 //                                      L3          MOD                     NONE        PRESSED
     ALGR(KC_Q), ALGR(KC_2), KC_MINS,    ALGR(KC_3), KC_6,                   KC_9,       KC_P7,      KC_P8,      KC_P9,      KC_7,
-    ALGR(KC_Z), KC_4,       KC_5,       KC_1,       ALGR(KC_G),             KC_0,       KC_P4,      KC_P5,      KC_P6,      KC_8,
+    ALGR(KC_Z), KC_4,       KC_5,       ALGR(KC_G), KC_1,                   KC_0,       KC_P4,      KC_P5,      KC_P6,      KC_8,
     S(KC_GRV),  ALGR(KC_X), ALGR(KC_C), KC_GRV,     ALGR(KC_B),             KC_P0,      KC_P1,      KC_P2,      KC_P3,      KC_EQL,
                                         MO(MOUSE),  KC_RALT,                ___,        KC_TRNS
     ),
