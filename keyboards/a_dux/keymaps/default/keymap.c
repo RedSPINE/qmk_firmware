@@ -3,7 +3,20 @@
 // Spine keymap for RedSPINE, made for BÉPO layout
 
 #include QMK_KEYBOARD_H
-
+// Philosophy
+// - Limit the use of tap/hold modifiers
+// - The use of a full keyboard should never be required for anything (=> have access to all keys)
+// - Focus on making french typing easy and bépo compliant as much as possible, some trade-offs can be accepted if huge value for english typing (like the W)
+// - LeftHand only shortcuts is very precious for mouse navigation
+// - Therefore everything Typing related must me on the right hand as much as possible
+// => accept that typing in french can’t be done without use of layer
+// - Build a priority list of stuff that must be achievable with left hand only (ordered) :
+//      - fill up data / numbers
+//      - fill up data / numbers
+//      - fill up data / numbers
+//      - fill up data / numbers
+//      - fill up data / numbers
+//
 // Name             |   thumbs  |   Usage
 // =================|===========|====================
 #define BÉP0 0 //   |   ·· ··   |   BÉPO
