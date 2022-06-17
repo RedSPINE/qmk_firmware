@@ -26,7 +26,7 @@
 #define ShCt1 3 //  |  ××· ··   |   more Shortcuts for left hand + Music control
 #define LAYERS 4 // |  ××· ··   |   Enter Locked layers
 // FUNCTIONS ========================================
-#define NUM 5 //    |   ·· ·×   |   Code Related + Numbers
+#define NUM 5 //    |   ·× ··   |   Code Related + Numbers
 #define MOUSE 6 //  |   ×· ·×   |   Mouse emulation
 #define GAM0 7 //   |   LAYERS  |   Gaming layer
 
@@ -38,19 +38,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //  Bb          Éé          Pp          Oo          Èè                      !(^)        Vv          Dd          Ll          Mm
 //  Aa          Uu          Ii          Ee          ;,                      Cc          Tt          Ss          Rr          Nn
 //  Àà          Xx          Yy          :.          Kk                      Ww          Qq          Gg          Hh          Ff
-//                                      NUM         Shift                   Space/BÉPO2 Enter/NUM
+//                                      ShCt0       Enter/Num               Space/BÉPO2 Shift
     KC_Q,       KC_W,       KC_E,       KC_R,       KC_T,                   KC_Y,       KC_U,       KC_I,       KC_O,       KC_QUOT,
     KC_A,       KC_S,       KC_D,       KC_F,       KC_G,                   KC_H,       KC_J,       KC_K,       KC_L,       KC_SCLN,
     KC_Z,       KC_C,       KC_X,       KC_V,       KC_B,                   KC_RBRC,    KC_M,       KC_COMM,    KC_DOT,     KC_SLSH,
-                                      MO(ShCt0),    KC_LSFT,                LT(5,KC_SPC),  LT(NUM,KC_ENT)
+                                      MO(ShCt0),    LT(NUM,KC_ENT),         LT(5,KC_SPC),   KC_LSFT 
     ),
     [BÉP1] = LAYOUT_split_3x5_2(// More BÉPO with Transparency
-//  Ææ          ♥(´)        (˙)(¨)      §&          `(`)
-//  Çç          Ùù          Jj          ?’          Œœ
+//  Ææ          ♥(´)        (˙)(¨)      Œœ          `(`)
+//  Çç          Ùù          Jj          ?’          §&
 //  Zz                                  ·…          
 //                                      Insec       Shift
-    ALGR(KC_A), ALGR(KC_W), ALGR(KC_D), ALGR(KC_E), ALGR(KC_T),             KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
-    KC_BSLS,    ALGR(KC_S), KC_P,       KC_N,       ALGR(KC_R),             KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
+    ALGR(KC_A), ALGR(KC_W), ALGR(KC_D), ALGR(KC_R), ALGR(KC_T),             KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
+    KC_BSLS,    ALGR(KC_S), KC_P,       KC_N,       ALGR(KC_E),             KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
     KC_LBRC,    KC_TRNS,    KC_TRNS,    ALGR(KC_V), KC_TRNS,                KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,
                                         ALGR(KC_SPC),   KC_LSFT,            KC_TRNS,    ___
     ),
