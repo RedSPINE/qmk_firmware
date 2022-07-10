@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_Q,       KC_W,       KC_E,       KC_R,       KC_T,                   KC_Y,       KC_U,       KC_I,       KC_O,       KC_QUOT,
     KC_A,       KC_S,       KC_D,       KC_F,       KC_G,                   KC_H,       KC_J,       KC_K,       KC_L,       KC_SCLN,
     KC_Z,       KC_C,       KC_X,       KC_V,       KC_B,                   KC_RBRC,    KC_M,       KC_COMM,    KC_DOT,     KC_SLSH,
-                                      MO(ShCt0),    LT(NUM,KC_ENT),         LT(5,KC_SPC),   KC_LSFT 
+                                      MO(ShCt0),    LT(NUM,KC_ENT),         LT(NUM,KC_SPC),   KC_LSFT 
     ),
     [BÉP1] = LAYOUT_split_3x5_2(// More BÉPO with Transparency
 //  Ææ          ♥(´)        (˙)(¨)      Œœ          `(`)
@@ -64,7 +64,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     S(KC_GRV),  ALGR(KC_X), ALGR(KC_C), KC_GRV,     ALGR(KC_B),             KC_P0,      KC_P1,      KC_P2,      KC_P3,      KC_EQL,
                                         MO(MOUSE),  KC_RALT,                ___,        KC_TRNS
     ),
-    [ShCt0] = LAYOUT_split_3x5_2(// Shortcuts Left Hand Only                 Navigation and Formatting
+    [ShCt0] = LAYOUT_split_3x5_2(// Shortcuts Left Hand Only                Navigation and Formatting
 //  ESC         CTRL+D      DEL         CTRL+A      ALT+F4                  PAGE_UP     HOME        ARROW_UP    END         F2
 //  SHIFT       WINDOWS/L6  LALT        TAB         CTRL+Z                  PAGE_DOWN   ARROW_LEFT  ARROW_DOWN  ARROW_RIGHT CTRL+F
 //  LAYERS      CTRL+X      CTRL+C      CTRL+S      CTRL+V                  DEL         BACKSPACE                           
@@ -91,7 +91,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                         ___,        ___,                    ___,        ___
     ),    
 
-    [ShCt1] = LAYOUT_split_3x5_2(// Windows Shortcuts LeftHand only         Music
+    [ShCt1] = LAYOUT_split_3x5_2(// More Shortcuts LeftHand only         Music
 //                          
 //
 //
